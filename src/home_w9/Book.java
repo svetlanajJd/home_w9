@@ -2,33 +2,24 @@ package home_w9;
 
 public class Book {
     private String title;
-    private Author name;
-    private Author surname;
     private int year;
+    private Author author;
 
-    public Book(String title, Author name, int year) {
+    public Book(String title, Author author, int year) {
         this.title = title;
-        this.name = name;
+        this.author = author;
         this.year = year;
     }
-
     public String getTitle() {
         return this.title;
     }
-
     public int getYear() {
         return this.year;
     }
-
-    public Author getName() {
-        return this.name;
+    public Author getAuthor() {
+        return this.author;
     }
-
-    public Author getSurname() {
-        return this.surname;
-    }
-
-    public void setYear(int year){
-        this.year=year;
+    public void setYear(int year) {
+        this.year = year;
     }
 }
