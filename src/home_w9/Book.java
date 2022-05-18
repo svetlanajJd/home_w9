@@ -1,5 +1,7 @@
 package home_w9;
 
+import java.util.Objects;
+
 public class Book {
     private String title;
     private int year;
@@ -21,5 +23,22 @@ public class Book {
     }
     public void setYear(int year) {
         this.year = year;
+    }
+
+    public String toString() {
+        int year1 = year;
+        return title+" "+author+" "+year1;
+    }
+
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        Book book = (Book) other;
+        return title.equals(book.title);
+    }
+
+    public int hashCode() {
+        return Objects.hash(title);
     }
 }

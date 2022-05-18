@@ -11,5 +11,13 @@ public class Main {
         Book EvgenyOnegin = new Book("Евгений Онегин ", alexander, 1992);
 
         EvgenyOnegin.setYear(1985);
+        System.out.println(lev);
+        System.out.println(WarAndPeace);
+        System.out.println(lev.equals(alexander));
+        System.out.println(WarAndPeace.equals(EvgenyOnegin));
     }
+
+
+
+
 }
